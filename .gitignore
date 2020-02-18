@@ -1,0 +1,20 @@
+# ignorar:
+
+# Ipython notebook checkpoints
+.ipynb_checkpoints/*
+tarea1/.ipynb_checkpoints/*
+
+# Byte-compiled / optimized / DLL files:
+/__pycache__/*
+*.py[cod]
+
+# logs
+logs/*
+*.log
+
+# Archivos html
+*.html
+
+
+# Bases de datos sqlite
+tarea1/data/*.sqlite3
