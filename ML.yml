@@ -1,0 +1,22 @@
+name: aprendizaje-automatico
+channels:
+ - conda-forge
+dependencies:
+ - python=3.7
+ - numpy
+ - pandas
+ - mysqlclient
+ - geopandas
+ - seaborn
+ - scikit-learn
+ - sqlalchemy
+ - spyder
+ - jupyter
+ - imbalanced-learn
+ - python-graphviz
+ - pip
+ - pip:
+   - pyod
+   - pydotplus
+   - graphviz
+   - mysql-connector
