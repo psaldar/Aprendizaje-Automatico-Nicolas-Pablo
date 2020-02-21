@@ -18,3 +18,5 @@ logs/*
 
 # Bases de datos sqlite
 tarea_1/data/*.sqlite3
+
+tarea_1/pruebas/*
