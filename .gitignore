@@ -2,7 +2,7 @@
 
 # Ipython notebook checkpoints
 .ipynb_checkpoints/*
-tarea 1/.ipynb_checkpoints/*
+tarea_1/.ipynb_checkpoints/*
 
 # Byte-compiled / optimized / DLL files:
 /__pycache__/*
