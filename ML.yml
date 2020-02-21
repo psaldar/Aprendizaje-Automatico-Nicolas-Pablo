@@ -14,6 +14,7 @@ dependencies:
  - jupyter
  - imbalanced-learn
  - python-graphviz
+ - mlxtend
  - pip
  - pip:
    - pyod

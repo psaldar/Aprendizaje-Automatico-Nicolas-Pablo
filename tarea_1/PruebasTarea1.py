@@ -21,7 +21,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 ## Fijo semilla aleatoria 
-import tensorflow as tf
+#import tensorflow as tf
 import os
 
 SEED = 1  # use this constant seed everywhere
@@ -29,7 +29,7 @@ SEED = 1  # use this constant seed everywhere
 os.environ['PYTHONHASHSEED'] = str(SEED)
 random.seed(SEED)  # `python` built-in pseudo-random generator
 np.random.seed(SEED)  # numpy pseudo-random generator
-tf.set_random_seed(SEED)  # tensorflow pseudo-random generator
+#tf.set_random_seed(SEED)  # tensorflow pseudo-random generator
 
 
 
@@ -38,7 +38,7 @@ tf.set_random_seed(SEED)  # tensorflow pseudo-random generator
 
 d_ini = dt.datetime(2017,6,1)
 d_fin = dt.datetime(2017,7,1)
-db_name = r"C:\Users\nicol\Documents\Mis_documentos\MaestriaCienciaDatos\Semestre2\AprendizajeMaq\Github\Apr\tarea_1\data\data_accidentes.sqlite3"
+db_name = r"data/data_accidentes.sqlite3"
 
 conn = sqlite3.connect(db_name)
 query = f"""SELECT *
@@ -59,7 +59,7 @@ data = data[data['BARRIO'].str.contains("LaA")]
 
 
 ############### Agregar otras features
-data['mes'] = data['TW'].dt.month
+data['hora'] = data['TW'].dt.hour
 data['dia_sem'] = data['TW'].dt.dayofweek
 
 data= pd.get_dummies(data, columns=['icon'])
