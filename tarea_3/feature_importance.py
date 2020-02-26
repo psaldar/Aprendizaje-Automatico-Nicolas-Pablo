@@ -27,6 +27,38 @@ query = f""" SELECT * FROM
 data = pd.read_sql_query(query, conn)
 data['TW'] = pd.to_datetime(data['TW'])
 #%%
+### Dejar solo accidentes del Poblado
+lista_poblado = """
+ElGuamal
+BarrioColombia
+VillaCarlota
+Castropol
+Lalinde
+LasLomasNo1
+LasLomasNo2
+AltosdelPoblado
+ElTesoro
+LosNaranjos
+LosBalsosNo1
+SanLucas
+ElDiamanteNo2
+ElCastillo
+LosBalsosNo2
+Alejandria
+LaFlorida
+ElPoblado
+Manila
+Astorga
+PatioBonito
+LaAguacatala
+SantaMariadeLosÁngeles
+"""
+lista_poblado_l = lista_poblado.split('\n')
+
+data = data[data['BARRIO'].isin(lista_poblado_l)]
+data['poblado'] = data['BARRIO']
+data= pd.get_dummies(data, columns=['poblado'])
+#%%
 ### Agregar otras features
 data['hora'] = data['TW'].dt.hour
 data['dia_sem'] = data['TW'].dt.dayofweek
@@ -78,7 +110,7 @@ for i in range(N):
     tra_0 = int(len(y_train) - y_train.sum())
     tra_1 = int(y_train.sum())
     
-    prop_deseada_under = 0.3
+    prop_deseada_under = 0.5
     mul_updown = (tra_0 * prop_deseada_under - tra_1 * (1 - prop_deseada_under)) / (tra_0 * prop_deseada_under)   
     fac_1 = int(tra_0 * (1 - mul_updown))
     
@@ -90,4 +122,4 @@ for i in range(N):
     
     res[i,:] = clf.feature_importances_
     
-    pd.DataFrame(res, columns = X_train.columns).to_csv('data/feature_importance2.csv', sep =',', index = 'False')
+    pd.DataFrame(res, columns = X_train.columns).to_csv('data/feature_importance3.csv', sep =',', index = 'False')
