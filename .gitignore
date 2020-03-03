@@ -5,6 +5,7 @@
 tarea_2/.ipynb_checkpoints/*
 tarea_3/.ipynb_checkpoints/*
 tarea_4/.ipynb_checkpoints/*
+tarea_5/.ipynb_checkpoints/*
 
 # Byte-compiled / optimized / DLL files:
 /__pycache__/*
@@ -21,6 +22,8 @@ logs/*
 tarea_2/data/*.sqlite3
 tarea_3/data/*.sqlite3
 tarea_4/data/*.sqlite3
+tarea_5/data/*.sqlite3
 
 tarea_2/pruebas/*
 tarea_3/pruebas/*
+tarea_5/pruebas/*
