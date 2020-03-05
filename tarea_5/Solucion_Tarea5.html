@@ -12245,10 +12245,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.706766405347159
 
 
 
-<div id="08c65978-d1ef-4f2d-a932-0e2689837e77"></div>
+<div id="e87473cb-9fa5-4cfa-9a72-7f136818fa1d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#08c65978-d1ef-4f2d-a932-0e2689837e77');
+var element = $('#e87473cb-9fa5-4cfa-9a72-7f136818fa1d');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13055,7 +13055,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos ver que se obtienen resultados acorde a lo esperado en un algoritmo genético: vemos grandes y frecuentes mejoras en las primeras generaciones, pero después de un cierto tiempo, las mejoras se vuelven más espaciadas y menos considerables, por lo que probablemente no se obtengan ganancias muchas más grandes al permitir que itere por más generaciones (lo que aumentaría mucho el tiempo de cómputo). Se observa que logra mejorar mucho las soluciones iniciales (recordando que una de ellas era la usada en la tarea 3) y además obtiene un balanced accuracy de 0.7 en validation, lo cual se considera bueno. El tiempo de cómputo es de aproximadamente 6 minutos.</p>
+<p>Podemos ver que se obtienen resultados acorde a lo esperado en un algoritmo genético: vemos grandes y frecuentes mejoras en las primeras generaciones, pero después de un cierto tiempo, las mejoras se vuelven más espaciadas y menos considerables, por lo que probablemente no se obtengan ganancias muchas más grandes al permitir que itere por más generaciones (lo que aumentaría mucho el tiempo de cómputo). Se observa que logra mejorar mucho las soluciones iniciales (recordando que una de ellas era la usada en la tarea 3) y además obtiene un balanced accuracy de 0.706 en validation, lo cual se considera bueno. El tiempo de cómputo es de aproximadamente 6 minutos.</p>
 
 </div>
 </div>
@@ -13182,7 +13182,7 @@ El balanced accuracy es 0.6857698120245881
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vemos que de las medidas encontradas, tenemos buenos desempeños tal como ocurre con el ROC_AUC (obtiene un valor de 0.76 que se considera bastante bueno para un problema de alta complejidad como este). Igualmente vemos un valor alto en la sensibilidad (recall), para el f1_score y un valor bueno para el balanced accuracy. A pesar de que las métricas obtenidas en prueba son muy similares a las obtenidas con las variables escogidas en la tarea 3 (en la que se usó feature importance del random forest), vemos que aquí se usan 42 variables mientras que allá se usaban 52 variables, lo que supone una mejora considerable en tiempo de cómputo. Se puede concluir entonces que las variables escogidas por el método del algoritmo genético representan un buen conjunto de variables para resolver el problema y obtienen buenos resultados. Sin embargo, sería bueno como trabajo futuro ver si se puede mejorar su capacidad de generalizar (a pesar de que el algoritmo genético mejoró mucho la métrica en validación, al evaluar en el conjunto de prueba los resultados seguían siengo casi equivalentes a los de la tarea 3).</p>
+<p>Vemos que de las medidas encontradas, tenemos buenos desempeños tal como ocurre con el ROC_AUC (obtiene un valor de 0.76 que se considera bastante bueno para un problema de alta complejidad como este). Igualmente vemos un valor alto en la sensibilidad (recall), para el f1_score y un valor bueno para el balanced accuracy. A pesar de que las métricas obtenidas en prueba son muy similares a las obtenidas con las variables escogidas en la tarea 3 (en la que se usó feature importance del random forest), vemos que aquí se usan 42 variables mientras que allá se usaban 52 variables, lo que supone una mejora considerable en tiempo de cómputo. Se puede concluir entonces que las variables escogidas por el método del algoritmo genético representan un buen conjunto de variables para resolver el problema y obtienen buenos resultados. Sin embargo, sería bueno como trabajo futuro ver si se puede mejorar su capacidad de generalizar (a pesar de que el algoritmo genético mejoró mucho la métrica en validación, al evaluar en el conjunto de prueba los resultados seguían siendo casi equivalentes a los de la tarea 3).</p>
 
 </div>
 </div>
@@ -13216,7 +13216,7 @@ El balanced accuracy es 0.6857698120245881
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El número de generaciones es el criterio de paradad utilizado en este método. Lo que vamos a analizar entonces es que ocurriría en los casos en que usaramos un número de generaciones muy bajo o muy alto, para poder mostrar la importancia de elegir un valor correcto para este hiperparámetro.</p>
+<p>El número de generaciones es el criterio de parada utilizado en este método. Lo que vamos a analizar entonces es que ocurriría en los casos en que usáramos un número de generaciones muy bajo o muy alto, para poder mostrar la importancia de elegir un valor correcto para este hiperparámetro.</p>
 <p>Primero, mostremos que ocurriría si se asigna un número de generaciones muy bajo, de solo 15 generaciones.</p>
 
 </div>
@@ -13279,10 +13279,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.699258518911828
 
 
 
-<div id="42554f9b-8971-4037-a9b9-0e97fe43be2f"></div>
+<div id="2afd78f4-97e7-4ab8-8358-ced81791bf49"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#42554f9b-8971-4037-a9b9-0e97fe43be2f');
+var element = $('#2afd78f4-97e7-4ab8-8358-ced81791bf49');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14089,9 +14089,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos ver que, tal como se esperaba, en las primeras generaciones ocurren muchas mejoras considerables y frecuentes en en el mejor valor de la función objetivo.</p>
-<p>Esto es un resultado adecuado para un algoritmo genético: al inicio, los cruces y mutaciones generarán mejoras muy significativas, las soluciones más débiles desaparecen en las primera generaciones mientras que las más fuertes se cruzan y se van creando rápidamente combinaciones de genes que mejoras mucho la solución.</p>
-<p>Sin embargo, vemos que todo parcee indicar que hemos parado muy pronto el método: la gráfica estaba mostrando mejoras frecuentemente y de buena magnitud, y nos hemos detenido muy temprano (solo permitimos 15 generaciones). Se observa entonces que es correcto permitir un número de generaciones mayor en el método (el tiempo de cómputo aún es bajo, tardó 2 minutos).</p>
+<p>Podemos ver que, tal como se esperaba, en las primeras generaciones ocurren muchas mejoras considerables y frecuentes en el mejor valor de la función objetivo.</p>
+<p>Esto es un resultado adecuado para un algoritmo genético: al inicio, los cruces y mutaciones generarán mejoras muy significativas, las soluciones más débiles desaparecen en las primeras generaciones mientras que las más fuertes se cruzan y se van creando rápidamente combinaciones de genes que mejoras mucho la solución.</p>
+<p>Sin embargo, vemos que todo parece indicar que hemos parado muy pronto el método: la gráfica estaba mostrando mejoras frecuentemente y de buena magnitud, y nos hemos detenido muy temprano (solo permitimos 15 generaciones). Se observa entonces que es correcto permitir un número de generaciones mayor en el método (el tiempo de cómputo aún es bajo, tardó 2 minutos).</p>
 
 </div>
 </div>
@@ -14162,10 +14162,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.710224464086787
 
 
 
-<div id="c6ac6906-83bd-4735-9b37-1da222a28726"></div>
+<div id="6bbde248-d709-474c-94a9-796567d3e67a"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c6ac6906-83bd-4735-9b37-1da222a28726');
+var element = $('#6bbde248-d709-474c-94a9-796567d3e67a');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14973,8 +14973,8 @@ if (IPython.notebook.kernel != null) {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Podemos ver que, luego de la mejora rápida y significativa de las primeras generaciones, cada vez se van haciendo más espaciadas las generaciones en las que hay mejora, y cuando ocurren, las mejoras cada vez son menos significativas. Además, vemos que el tiempo total de cómputo fue de aproximadamente 12 minutos, lo cual es relativamente alto.</p>
-<p>Este resultado es adecuado según lo que esperábamos: al inicio, hay muchas mejoras en un algoritmo genético. Sin embargo, a medida que van avanzando las generaciones, cada vez es más difícil encontrar individuos que superen a los mejores individuos que se han visto hasta ahora, y cuando esto ocurre, suelen ser mejoras muy leves y espaciadas. Este resultado es acorde con lo que la literatura indica de los algoritmos genéticos. Por esta razón, a pesar de que en generaciones muy avanzadas se siguen consiguiendo leves mejoras, podríamos considerar mejorar usar un número de generacioens mucho menor, de tal forma que logremos obtener soluciones casi igual de buenas pero sin requerir un tiempo de cómputo tan elevado como el de este caso.</p>
-<p>Esto nos permitiría pensar entonces en que debemos usar un valor de número de generaciones equilibrado entre ambso extremos: suficiente para que alcance a explorar muchas soluciones, pero no puede ser demasiado alto hasta el punto que gaste un tiempo de cómputo muy elevado por ganancias poco significativas.</p>
+<p>Este resultado es adecuado según lo que esperábamos: al inicio, hay muchas mejoras en un algoritmo genético. Sin embargo, a medida que van avanzando las generaciones, cada vez es más difícil encontrar individuos que superen a los mejores individuos que se han visto hasta ahora, y cuando esto ocurre, suelen ser mejoras muy leves y espaciadas. Este resultado es acorde con lo que la literatura indica de los algoritmos genéticos. Por esta razón, a pesar de que en generaciones muy avanzadas se siguen consiguiendo leves mejoras, podríamos considerar mejorar usar un número de generaciones mucho menor, de tal forma que logremos obtener soluciones casi igual de buenas pero sin requerir un tiempo de cómputo tan elevado como el de este caso.</p>
+<p>Esto nos permitiría pensar entonces en que debemos usar un valor de número de generaciones equilibrado entre ambos extremos: suficiente para que alcance a explorar muchas soluciones, pero no puede ser demasiado alto hasta el punto de que gaste un tiempo de cómputo muy elevado por ganancias poco significativas.</p>
 
 </div>
 </div>
@@ -15059,10 +15059,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.691422161143559
 
 
 
-<div id="5e2c21d5-1a26-4d70-b481-4f70be5f48db"></div>
+<div id="04701e38-22c7-4af4-9527-c77b6dfa559d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#5e2c21d5-1a26-4d70-b481-4f70be5f48db');
+var element = $('#04701e38-22c7-4af4-9527-c77b6dfa559d');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15869,10 +15869,10 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos ver que al inicio, hay mejoras muy rápidas y grandes de la función objetivo. Sin embargo, luego de pocas generaciones, se alcanza una solución objetivo máxima la cual no logra mejorarse más.</p>
+<p>Podemos ver que al inicio, hay mejoras muy rápidas y grandes de la función objetivo. Sin embargo, luego de pocas generaciones, se alcanza una función objetivo máxima la cual no logra mejorarse más.</p>
 <p>Estos resultados nos muestran muy claramente la importancia de la mutación en un algoritmo genético. Lo que aquí ha pasado es que al solo depender de los cruces entre los padres, el método ha podido encontrar grandes mejoras en las primeras generaciones (explotación).</p>
 <p>Sin embargo, luego de esto, el método llega a una etapa donde ya no logra mejorarse más: ya ha evaluado la mayoría de los posibles cruces entre padres, y además al analizar nosotros las soluciones hemos visto que empieza a generar los individuos duplicados. Al no haber mutación, todas las soluciones iban por el mismo camino y ahora todas son iguales o muy similares y se ha perdido la diversidad en la población, la cual es una propiedad fundamental para el algoritmo genético. Al no haber mutación, el algoritmo perdió la capacidad de buscar soluciones en espacios muy distintos a los de las soluciones actuales (explorar). Esto conlleva a que se estanque en un óptimo local, demostrando así la importancia del operador de mutación en el método.</p>
-<p>Tengamos en cuenta que el bajo tiempo de cómputo (menos de 2 minutos) se puede explicar porque el algoritmo por dentro recuerda el valor objetivo de una cierta solución, y como lo que pasó en este caso fue que al no haber mutación toda la población terminó teniendo los mismo genes, casi nunca fue necesario evaluar la función objetivo desde cero ya que ésta ya se conocía.</p>
+<p>Tengamos en cuenta que el bajo tiempo de cómputo (menos de 2 minutos) se puede explicar porque el algoritmo por dentro recuerda el valor objetivo de una cierta solución, y como lo que pasó en este caso fue que al no haber mutación toda la población terminó teniendo los mismos genes, casi nunca fue necesario evaluar la función objetivo desde cero ya que ésta ya se conocía.</p>
 <p>Miremos ahora que ocurre cuando se usa un porcentaje de mutación muy alta (se mutan el 90% de las soluciones creadas):</p>
 
 </div>
@@ -15935,10 +15935,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.695873338122455
 
 
 
-<div id="5bf01d2a-beff-4b5b-9444-1cdfc5d16e7b"></div>
+<div id="aeba877b-9898-4433-90ed-3304cae8af8e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#5bf01d2a-beff-4b5b-9444-1cdfc5d16e7b');
+var element = $('#aeba877b-9898-4433-90ed-3304cae8af8e');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -16745,8 +16745,8 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En los resultados anteriores, podemos ver que en las primeras generaciones se obtuvieron buenas mejoras. Sin embargo, vemos que luego de un número de generaciones (aproximadamente 20) no se encontraron más mejoras en la solución objetivo. Además, vemos que el mejor resultado hallado (0.695 balanced accuracy) es inferior al metodo final escogido que usaba un porcentaje de mutación más conservador de solo el 20%.</p>
-<p>Estos resultados también soportan lo esperado: al usar un porcentaje de mutación tan alto, estamos restándole importancia al operador de cruce, el cual es el principal encargado de mejorar en un ámbito local las solucioknes al cruzar dos padres que deberían ser buenas soluciones. Le estamos dando mucha importancia a variar de formas aleatorias el espacio de solución (explorar), sin embargo, al usar tan pocos cruces, no estamos dándole suficiente importancia a tratar de mejorar mucho la solución en un ámbito local (explotar). Por esta razón, no se obtendrán resultados tan buenos si nos dedicamos a mutar casi todas las soluciones.</p>
+<p>En los resultados anteriores, podemos ver que en las primeras generaciones se obtuvieron buenas mejoras. Sin embargo, vemos que luego de un número de generaciones (aproximadamente 20) no se encontraron más mejoras en la solución objetivo. Además, vemos que el mejor resultado hallado (0.695 balanced accuracy) es inferior al del método final escogido que usaba un porcentaje de mutación más conservador de solo el 20%.</p>
+<p>Estos resultados también soportan lo esperado: al usar un porcentaje de mutación tan alto, estamos restándole importancia al operador de cruce, el cual es el principal encargado de mejorar en un ámbito local las soluciones al cruzar dos padres que deberían ser buenas soluciones. Le estamos dando mucha importancia a variar de formas aleatorias el espacio de solución (explorar), sin embargo, al usar tan pocos cruces, no estamos dándole suficiente importancia a tratar de mejorar mucho la solución en un ámbito local (explotar). Por esta razón, no se obtendrán resultados tan buenos si nos dedicamos a mutar casi todas las soluciones.</p>
 
 </div>
 </div>
@@ -16826,10 +16826,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.708816878533279
 
 
 
-<div id="dd10d4b1-52d9-49a7-9ed3-a7c62ed13a2d"></div>
+<div id="1bf99a02-e9e1-484e-8c81-66c4f7097507"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#dd10d4b1-52d9-49a7-9ed3-a7c62ed13a2d');
+var element = $('#1bf99a02-e9e1-484e-8c81-66c4f7097507');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -17699,10 +17699,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.702575194427960
 
 
 
-<div id="d08bfdb6-f5cd-4f0d-a718-473466f3757e"></div>
+<div id="c0392332-b1a6-4663-9c7c-2503cbd08b20"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d08bfdb6-f5cd-4f0d-a718-473466f3757e');
+var element = $('#c0392332-b1a6-4663-9c7c-2503cbd08b20');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -18510,8 +18510,8 @@ if (IPython.notebook.kernel != null) {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Como vemos en la gráfica, se logran obtener buenos resultados, y el comportamiento es similar a lo que esperamos en los genéticos (buenas y frecuentes mejoras al inicio, pero se van volviendo menos significativas y más espaciadas).</p>
-<p>Comparando con el método final escogido, vemos que la solución, a pesar de ser buena, no es tan buena como la del método final. Esto se debe probablemente a que, al reducir la población a la mitad, solo permitimos evaluar la mitad de las soluciones evaludas por el método final. Al dejar de evaluar tantas soluciones, fue incapaz de lograr una solución tan buena. Sin embargo, notar que el tiempo de cómputo es de aproximadamente 3 minutos, prácticamente la mitad del tiempo usado por el método final (6 minutos), lo que tiene sentido ya que se redujo a la mitad el número de soluciones evaluadas. De esta forma, si se contara con muy poco tiempo, esta podría resultar una buena alternativa.</p>
-<p>Al evaluar distintos tamaños de población, fue posible entonces ver que el trade-off entre tiempo de cómputo y calidad de la solución es evidente: al aumentar el tamaño de la población (y dejar las mismas generaciones), la calidad de la solución suele aumentar y también el tiempo de cómputo, y viceversa. Por ende, es necesario asignar un tamaño de la población adecuao para equilibrar ambos aspectos (calidad y tiempo de cómputo).</p>
+<p>Comparando con el método final escogido, vemos que la solución, a pesar de ser buena, no es tan buena como la del método final. Esto se debe probablemente a que, al reducir la población a la mitad, solo permitimos evaluar la mitad de las soluciones evaluadas por el método final. Al dejar de evaluar tantas soluciones, fue incapaz de lograr una solución tan buena. Sin embargo, notar que el tiempo de cómputo es de aproximadamente 3 minutos, prácticamente la mitad del tiempo usado por el método final (6 minutos), lo que tiene sentido ya que se redujo a la mitad el número de soluciones evaluadas. De esta forma, si se contara con muy poco tiempo, esta podría resultar una buena alternativa.</p>
+<p>Al evaluar distintos tamaños de población, fue posible entonces ver que el trade-off entre tiempo de cómputo y calidad de la solución es evidente: al aumentar el tamaño de la población (y dejar las mismas generaciones), la calidad de la solución suele aumentar y también el tiempo de cómputo, y viceversa. Por ende, es necesario asignar un tamaño de la población adecuado para equilibrar ambos aspectos (calidad y tiempo de cómputo).</p>
 
 </div>
 </div>
@@ -18591,10 +18591,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.685115199217082
 
 
 
-<div id="539b4445-8e90-492c-95af-e2dcb0aca3ab"></div>
+<div id="170e0b13-bcc2-478a-803a-16386bf9d69e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#539b4445-8e90-492c-95af-e2dcb0aca3ab');
+var element = $('#170e0b13-bcc2-478a-803a-16386bf9d69e');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -19419,7 +19419,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Luego de analizados todos estos factores, podemos concluir que fue usando un algoritmo genético fue posible enecontrar las variables más relevantes para un modelo de Random Forest encargado predecir accidentes en la comuna del Poblado. Además, mostramos la importancia que tiene seleccionar bien los distintos hiperparámetros del algoritmo genético: el número de generaciones (suficientes para que se exploren varias soluciones, pero no exageradas), el porcentaje de mutación (de vital importancia para variar entre explorar y explotar y garantizar diversidad en la población), el tamaño de la población (relacionado directamente con el número de generaciones) y el porcentaje de genes que se mutan (no debe ser tan alto para procurar mantener algunos de los genes de las soluciones que se supone que son buenos).</p>
+<p>Luego de analizados todos estos factores, podemos concluir que fue usando un algoritmo genético fue posible encontrar las variables más relevantes para un modelo de Random Forest encargado predecir accidentes en la comuna del Poblado. Además, mostramos la importancia que tiene seleccionar bien los distintos hiperparámetros del algoritmo genético: el número de generaciones (suficientes para que se exploren varias soluciones, pero no exageradas), el porcentaje de mutación (de vital importancia para variar entre explorar y explotar y garantizar diversidad en la población), el tamaño de la población (relacionado directamente con el número de generaciones) y el porcentaje de genes que se mutan (no debe ser tan alto para procurar mantener algunos de los genes de las soluciones que se supone que son buenos).</p>
 
 </div>
 </div>
