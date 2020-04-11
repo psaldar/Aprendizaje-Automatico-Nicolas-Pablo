@@ -12053,6 +12053,15 @@ Number of test samples:  16153
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=red>CORRECCIÓN: el algoritmo genético tiene varios factores aleatorios que normalmente harían que su resultado cambie cada vez que es ejecutado (población inicial, probabilidades de cruce y mutación, genes cruzados o mutados, etc.). Sin embargo, para garantizar la reproducibilidad de estos experimentos, nosotros fijamos la semilla de aleatoriedad del algoritmo genético (tanto en el bloque siguiente como en el script auxiliar de python 'GA.py' que contiene todas las funciones para los operadores genéticos), conllevando así a que los resultados de una misma versión del algoritmo genético sean iguales a pesar de ejecutarla varias veces. Si la semilla no se fijara, se esperaría obtener resultados distintos cada vez que se volviera a ejecutar la misma versión del algoritmo genético.</font></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
@@ -12193,8 +12202,7 @@ Number of test samples:  16153
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=red>CORRECCIÓN: se aclara que en el algoritmo genético usado tanto en la próxima celda como en toda la parte de análisis de sensibilidad, la función de fitness elegida para medir la caldiad de cada individuo de la población (función objetivo) es la métrica de Balanced Accuracy de ese individuo.</p>
-<p>En esta parte donde se muestran los resultados finales elegidos se muestran en el conjunto de prueba también otras métricas para complementar el análisis (entre ellas Fscore y área bajo la curva ROC), sin embargo, en el análisis de sensbilidad y en el fitness del algoritmo genético se usa el Balanced Accuracy para evaluar la calidad de las soluciones entre los distintos métodos y elegir el mejor.&lt;/font&gt;</p>
+<p><font color=red>CORRECCIÓN: se aclara que en el algoritmo genético usado tanto en la próxima celda como en toda la parte de análisis de sensibilidad, la función de fitness elegida para medir la calidad de cada individuo de la población (función objetivo) es la métrica de Balanced Accuracy de ese individuo. En esta parte, donde se presentan los resultados finales obtenidos con la mejor versión del algoritmo genético, se muestran en el conjunto de prueba también otras métricas para complementar el análisis (entre ellas Fscore y área bajo la curva ROC); sin embargo, en el análisis de sensibilidad y en el fitness del algoritmo genético se usa solo el Balanced Accuracy para evaluar la calidad de las soluciones entre las distintas versiones o individuos y elegir el mejor.</font></p>
 
 </div>
 </div>
@@ -12255,10 +12263,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.706766405347159
 
 
 
-<div id="d5857f95-2b26-4fd3-ade8-999806e3c691"></div>
+<div id="123566d0-aa1c-474d-917f-898bb68bf3f2"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d5857f95-2b26-4fd3-ade8-999806e3c691');
+var element = $('#123566d0-aa1c-474d-917f-898bb68bf3f2');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13218,7 +13226,7 @@ El balanced accuracy es 0.6857698120245881
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=red>CORRECCIÓN: observar que el mejor individuo obtenido por cada una de estas versiones del algoritmo genético varía. Esto se puede ver al mirar los índices seleccioandos (variables seleccionadas) de cada versión del algoritmo, estos hacen referencais a las variables elegidas por su mejor individuo y se puede ver que estas cambian en cada versión del algoritmo.</font></p>
+<p><font color=red>CORRECCIÓN: observar que el mejor individuo obtenido por cada una de estas versiones del algoritmo genético va variando según la versión. Esto se puede ver al mirar los índices seleccionados (variables seleccionadas) de cada versión del algoritmo, éstos hacen referencia a las variables elegidas por su mejor individuo y se puede ver que estas cambian en cada versión del algoritmo.</font></p>
 
 </div>
 </div>
@@ -13298,10 +13306,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.699258518911828
 
 
 
-<div id="a4b23c18-9e34-47fe-859e-5cb4d5ac20d4"></div>
+<div id="b87851e6-d6a1-4e5c-b708-150f24038986"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#a4b23c18-9e34-47fe-859e-5cb4d5ac20d4');
+var element = $('#b87851e6-d6a1-4e5c-b708-150f24038986');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14181,10 +14189,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.710224464086787
 
 
 
-<div id="888251ef-0609-4a58-9650-fa8610954126"></div>
+<div id="52fe9f60-871c-4df4-9a3b-1f8fceb62ee8"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#888251ef-0609-4a58-9650-fa8610954126');
+var element = $('#52fe9f60-871c-4df4-9a3b-1f8fceb62ee8');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15078,10 +15086,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.691422161143559
 
 
 
-<div id="b58acee7-a5a8-440b-b51c-a36ad7a9c4ef"></div>
+<div id="3d611b10-0b41-4dde-9cef-0e8c7013d217"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b58acee7-a5a8-440b-b51c-a36ad7a9c4ef');
+var element = $('#3d611b10-0b41-4dde-9cef-0e8c7013d217');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15954,10 +15962,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.695873338122455
 
 
 
-<div id="ff64e60f-4a93-4687-903f-5d3352df60b4"></div>
+<div id="6e0c21f1-fc85-4f69-842b-9b55deea3922"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ff64e60f-4a93-4687-903f-5d3352df60b4');
+var element = $('#6e0c21f1-fc85-4f69-842b-9b55deea3922');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -16845,10 +16853,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.708816878533279
 
 
 
-<div id="2ad07bbb-2fb2-4960-aa15-9d01d94a5348"></div>
+<div id="1b6e15f7-fffb-40a9-a99e-851f98e6009f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#2ad07bbb-2fb2-4960-aa15-9d01d94a5348');
+var element = $('#1b6e15f7-fffb-40a9-a99e-851f98e6009f');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -17718,10 +17726,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.702575194427960
 
 
 
-<div id="30ecd226-60e2-4736-9ab7-28e4e288bd6e"></div>
+<div id="9de2bbf2-4b37-439e-9abc-0c6d3192a1f8"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#30ecd226-60e2-4736-9ab7-28e4e288bd6e');
+var element = $('#9de2bbf2-4b37-439e-9abc-0c6d3192a1f8');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -18610,10 +18618,10 @@ Balanced accuracy de la mejor solucion de todo el algoritmo :  0.685115199217082
 
 
 
-<div id="0f4e8d8c-e6a8-479d-82a7-03cffb31c470"></div>
+<div id="bee4c16e-8ddb-4d9d-86f8-9f6f999ca72a"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#0f4e8d8c-e6a8-479d-82a7-03cffb31c470');
+var element = $('#bee4c16e-8ddb-4d9d-86f8-9f6f999ca72a');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
