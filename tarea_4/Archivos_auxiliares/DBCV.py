@@ -27,8 +27,11 @@ def DBCV(X, labels, dist_function=euclidean):
     Returns: cluster_validity (float)
         score in range[-1, 1] indicating validity of clustering assignments
     """
+    print('Parteee 1')
     graph = _mutual_reach_dist_graph(X, labels, dist_function)
+    print('Parteee 2')
     mst = _mutual_reach_dist_MST(graph)
+    print('Parteee 3')
     cluster_validity = _clustering_validity_index(mst, labels)
     return cluster_validity
 
@@ -107,7 +110,9 @@ def _mutual_reach_dist_graph(X, labels, dist_function):
     n_samples = np.shape(X)[0]
     graph = []
     counter = 0
+    print(n_samples)
     for row in range(n_samples):
+        print(row)
         graph_row = []
         for col in range(n_samples):
             point_i = X[row]
@@ -201,7 +206,10 @@ def _cluster_validity_index(MST, labels, cluster):
         value corresponding to the validity of cluster assignments
     """
     min_density_separation = np.inf
+    print('validty_index')
+
     for cluster_j in np.unique(labels):
+        print(cluster_j)
         if cluster_j != cluster:
             cluster_density_separation = _cluster_density_separation(MST,
                                                                      labels,
