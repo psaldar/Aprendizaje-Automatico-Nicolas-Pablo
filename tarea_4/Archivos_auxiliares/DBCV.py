@@ -108,6 +108,8 @@ def _mutual_reach_dist_graph(X, labels, dist_function):
     graph = []
     counter = 0
     for row in range(n_samples):
+        if row%100==0:
+            print('Reachability distances calculated for '+str(row)+str(' points'))	
         graph_row = []
         for col in range(n_samples):
             point_i = X[row]
@@ -203,6 +205,7 @@ def _cluster_validity_index(MST, labels, cluster):
     min_density_separation = np.inf
 
     for cluster_j in np.unique(labels):
+        print('Computing validity for cluster label '+str(cluster_j))
         if cluster_j != cluster:
             cluster_density_separation = _cluster_density_separation(MST,
                                                                      labels,
