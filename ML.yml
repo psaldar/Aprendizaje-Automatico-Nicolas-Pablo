@@ -22,3 +22,4 @@ dependencies:
    - graphviz
    - gmplot
    - mysql-connector
+   - scikit-plot
